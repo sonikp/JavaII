@@ -21,13 +21,24 @@ public class Chapt_3_Lesson extends Turtle
 	
 	}
 	
-	
-	
-	
+
 	
 	public static void main(String[] args)
 	{
-		// 3.3.2
+		// 3.6.1  ---Start---
+		System.out.println(new Picture());
+		String pictureFile = "/Users/Shared/Java-Libraries/CourseCD/mediasources/beach.jpg";
+		String soundFile = "/Users/Shared/Java-Libraries/CourseCD/mediasources/croak.wav";
+		Picture pictureDisplay = new Picture(pictureFile);
+		Sound effect = new Sound(soundFile);
+		pictureDisplay.show();
+		effect.play();
+
+		
+		//System.out.println(FileChooser.pickAFile());
+		
+		/*
+		// 3.3.2  ---Start---
 		System.out.println("New world ..." + new World());
 		World worldObj = new World();
 		System.out.println(worldObj);
@@ -57,6 +68,11 @@ public class Chapt_3_Lesson extends Turtle
 		Chapt_3_Lesson localObj = new Chapt_3_Lesson(250,100,worldObj);
 		localObj.drawSquare();
 		
+		// get class info
+		System.out.println(worldObj.getClass());
+		System.out.println(turtle1.getClass());
+		// 3.3.2  ---End---
+		*/
 		
 		
 		
