@@ -7,5 +7,6 @@
 	<classpathentry kind="src" path="Module4"/>
 	<classpathentry kind="src" path="Module5"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/Shared/Java-Libraries/CourseCD/bookClasses"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
