@@ -89,7 +89,8 @@ public class Chapt_3_exercises extends Turtle
 	
 	public static void main(String[] args)
 	{
-		System.out.println("random change");
+		System.out.println("REMOVED: random change");
+		System.out.println("ADDED: Another random change");
 		World starWorld = new World();
 		Chapt_3_exercises starTurtle = new Chapt_3_exercises(320,240,starWorld);
 		starTurtle.drawStar(100, 144, 72);
