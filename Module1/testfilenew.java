@@ -6,7 +6,7 @@ public class testfilenew
 		System.out.println("REMOVED: Edited on little Vaio");
 		System.out.println("REMOVED: by notroot on Mint");
 		System.out.println("REMOVED: by notroot on MAC");
-		System.out.println("ADDED: by notroot on Mint");
+		System.out.println("CHANGED: by notroot on Mint, to something different");
 	}
 	
 }
