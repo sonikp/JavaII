@@ -1,8 +1,8 @@
-public class Chapt_3_Lesson extends Turtle
+public class Chapt_3_lesson extends Turtle
 {
 	
 	// constructors
-	public Chapt_3_Lesson(int x, int y, ModelDisplay modelDisplayer) 
+	public Chapt_3_lesson(int x, int y, ModelDisplay modelDisplayer) 
 	{
 		super(x, y, modelDisplayer);
 		// TODO Auto-generated constructor stub
