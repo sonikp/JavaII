@@ -5,9 +5,21 @@ public class Chapt_4_lesson_home extends Picture
 	
 	//////////////// constructors /////////////////////
 	
-	public Chapt_4_lesson_home(String filename) 
+	public Chapt_4_lesson_home() 
 	{
 		super();
+	}
+	
+	
+	public Chapt_4_lesson_home(String filename) 
+	{
+		super(filename);
+	}
+	
+	
+	public Chapt_4_lesson_home(Picture filename) 
+	{
+		super(filename);
 	}
 
 	public void decreaseRed()
@@ -28,24 +40,48 @@ public class Chapt_4_lesson_home extends Picture
 		}
 	}
 	
+	public void increaseGreen()
+	{
+		Pixel[] pixelArray = this.getPixels();
+		Pixel pixelObj;
+		int value = 0;
+		int index = 0;
+		// loop through the array
+		while (index < pixelArray.length)
+		{
+			pixelObj = pixelArray[index];
+			value = pixelObj.getGreen();
+			double valuePlus = value * 1.3;
+			if ( valuePlus <= 255 )
+			{
+				System.out.println(value + " " + valuePlus);
+				pixelObj.setGreen((int)valuePlus);
+			}
+		}
+	}
+	
 	public static void main(String[] args)
 	{
 		String filename = "/Users/Shared/Java-Libraries/CourseCD/mediasources/caterpillar.jpg";
-		//Picture pictureObject = new Picture(filename);
+
+		// local object
 		Chapt_4_lesson_home localObject = new Chapt_4_lesson_home(filename);
+		System.out.println(localObject);
 		localObject.explore();
-		localObject.decreaseRed();
+		localObject.increaseGreen();
 		localObject.explore();
-		
-		//pictureObject.show();
-		//System.out.println("width & height: " + pictureObject.getWidth() + " & " + pictureObject.getHeight());
-		
 		
 		/*
+		localObject.decreaseRed();
+		localObject.explore();
+	
+		//localObject.show();
+		System.out.println("width & height: " + localObject.getWidth() + " & " + localObject.getHeight());
+	
 		//get pixel using the pixel class
-		Pixel pixelObject = pictureObject.getPixel(2, 0);
+		Pixel pixelObject = localObject.getPixel(2, 0);
 		System.out.println(pixelObject);
-		Pixel[] pixelArray = pictureObject.getPixels();
+		Pixel[] pixelArray = localObject.getPixels();
 		System.out.println(pixelArray[2]);
 
 		// using the Color library
